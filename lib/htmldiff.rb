@@ -240,7 +240,7 @@ module HTMLDiff
     end
 
     def explode(sequence)
-      sequence.is_a?(String) ? sequence.split("") : sequence
+      sequence.is_a?(String) ? sequence.chars.to_a : sequence
     end
   
     def end_of_tag?(char)
